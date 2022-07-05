@@ -1,0 +1,36 @@
+h1{
+    color: rgb(189, 72, 72);
+    font-size:64px;
+    margin-bottom: 16px;
+}
+.portrait{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+header a{
+  margin-right:10px;
+  text-decoration: none;
+  color:#888888
+}
+body{
+ max-width:650px;
+ margin: 0 auto;
+ padding: 0 16px;
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+}
+.main-content{
+ flex-grow:1; 
+}
+footer{
+  color: #888888;
+  border-top:1px solid #eeeeee;
+  margin-top:16px;
+  padding: 16px 0;
+}
+header{
+  margin-top:16px;
+  margin-bottom: 48px;
+}
