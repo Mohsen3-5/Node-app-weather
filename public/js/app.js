@@ -5,8 +5,8 @@ var msg1=document.querySelector('#msg1')
 var errorMsg=document.querySelector('#errorMsg')
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
-    //fetch clint side API
-fetch('http://localhost:3000/weather?search='+address.value).then((respone)=>{
+//fetch clint side API
+fetch('/weather?search='+address.value).then((respone)=>{
     respone.json().then((data)=>{
         if(data.error){
             errorMsg.textContent=data.error

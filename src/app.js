@@ -2,6 +2,8 @@ const path=require('path')
 const express = require('express')
 const hbs = require('hbs')
 const app = express()
+//get heroku port
+const port = process.env.PORT||3000
 const geocode = require('./utiles/geocode')
 const forcast = require('./utiles/forcast')
 const { json } = require('express')
@@ -95,6 +97,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log('server is runing')
+app.listen(port,()=>{
+    console.log('server is runing on port '+port)
 })
