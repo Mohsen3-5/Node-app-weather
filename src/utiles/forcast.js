@@ -8,7 +8,7 @@ const forcast= (lati,longi,callback)=>{
          }else if(response.body.error){
             callback("erorr",undefined)
          }else{
-            callback(undefined,response.body)
+            callback(undefined,response.body.current.weather_descriptions[0]+', it is currently '+response.body.current.temperature + ' degress out.')
          }
      })
     
